@@ -48,7 +48,7 @@ public class CommentsServlet extends HttpServlet {
             return;
         }
 
-        if (author.length() > 64 || text.length() > 64) {
+        if (author.length() > 64 || text.length() > 1000) {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "author or text is to longer");
             return;
         }
