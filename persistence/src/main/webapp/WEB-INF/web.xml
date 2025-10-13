@@ -8,7 +8,7 @@
     <display-name>My Jetty 11 App</display-name>
 
     <listener>
-        <listener-class>web.AppInit</listener-class>
+        <listener-class>config.AppInit</listener-class>
     </listener>
 
     <servlet>
