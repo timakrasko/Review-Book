@@ -3,21 +3,29 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
 
+    <display-name>Books WebApp</display-name>
+
     <!-- Ініціалізація додатку -->
     <listener>
-        <listener-class>config.AppInit</listener-class>
+        <listener-class>sumdu.edu.ua.config.AppInit</listener-class>
     </listener>
+
+    <!-- Головна сторінка - перенаправлення на список книг -->
+    <welcome-file-list>
+        <welcome-file>books</welcome-file>
+    </welcome-file-list>
 
     <!-- Список книг -->
     <servlet>
         <servlet-name>BooksServlet</servlet-name>
-        <servlet-class>web.BooksServlet</servlet-class>
+        <servlet-class>sumdu.edu.ua.web.BooksServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>BooksServlet</servlet-name>
         <url-pattern>/books</url-pattern>
     </servlet-mapping>
 
+    <!-- API для роботи з книгами (JSON) -->
     <servlet>
         <servlet-name>BooksApiServlet</servlet-name>
         <servlet-class>sumdu.edu.ua.web.BooksApiServlet</servlet-class>
@@ -34,7 +42,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CommentsServlet</servlet-name>
-        <url-pattern>/comments/*</url-pattern>
+        <url-pattern>/comments</url-pattern>
     </servlet-mapping>
 
 </web-app>
