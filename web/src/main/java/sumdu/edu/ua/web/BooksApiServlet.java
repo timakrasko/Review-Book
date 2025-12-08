@@ -55,14 +55,12 @@ public class BooksApiServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
 
         try {
-            // Читаємо JSON з тіла запиту
             Map<String, Object> data = om.readValue(req.getInputStream(), Map.class);
 
             String title = (String) data.get("title");
             String author = (String) data.get("author");
             Integer pubYear = (Integer) data.get("pubYear");
 
-            // Валідація
             if (title == null || title.isBlank()) {
                 log.warn("POST /api/books - missing title");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -84,7 +82,6 @@ public class BooksApiServlet extends HttpServlet {
                 return;
             }
 
-            // Зберігаємо
             Book saved = Beans.getBookRepo().add(
                     title.trim(),
                     author.trim(),

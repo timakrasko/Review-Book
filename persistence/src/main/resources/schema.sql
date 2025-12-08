@@ -1,6 +1,3 @@
-drop table if exists comments;
-drop table if exists books;
-
 
 create table if not exists books (
                                      id identity primary key,

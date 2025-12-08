@@ -12,7 +12,11 @@ public final class Db {
     private static final String PASS = "";
 
     static {
-        try { Class.forName("org.h2.Driver"); } catch (ClassNotFoundException e) { throw new RuntimeException(e); }
+        try {
+            Class.forName("org.h2.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static Connection get() throws SQLException {

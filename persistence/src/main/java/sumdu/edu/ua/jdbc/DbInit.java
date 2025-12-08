@@ -5,14 +5,10 @@ import java.sql.Connection;
 import java.sql.Statement;
 
 public final class DbInit {
-
-    private DbInit() {}
-
     public static void init() {
         try (Connection c = Db.get();
              Statement st = c.createStatement()) {
 
-            // читаємо schema.sql з resources
             try (var in = DbInit.class.getClassLoader().getResourceAsStream("schema.sql")) {
                 if (in == null) {
                     throw new IllegalStateException("schema.sql not found in resources");

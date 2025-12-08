@@ -42,7 +42,6 @@ public class CommentsServlet extends HttpServlet {
                 return;
             }
 
-            // Параметри фільтрації
             String authorFilter = req.getParameter("author");
             String sinceStr = req.getParameter("since");
             Instant since = null;
@@ -61,7 +60,7 @@ public class CommentsServlet extends HttpServlet {
 
             req.setAttribute("book", book);
             req.setAttribute("comments", comments);
-            req.getRequestDispatcher("/WEB-INF/views/book-comments.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/views/book-comment.jsp").forward(req, resp);
 
         } catch (NumberFormatException e) {
             log.warn("GET /comments - invalid bookId: {}", bookIdStr);
@@ -80,13 +79,11 @@ public class CommentsServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         String method = req.getParameter("_method");
 
-        // Видалення коментаря
         if ("delete".equalsIgnoreCase(method)) {
             handleDelete(req, resp);
             return;
         }
 
-        // Додавання коментаря
         handleAdd(req, resp);
     }
 
@@ -106,7 +103,6 @@ public class CommentsServlet extends HttpServlet {
         try {
             long bookId = Long.parseLong(bookIdStr);
 
-            // Валідація
             if (author == null || author.isBlank()) {
                 log.warn("POST /comments - empty author for book {}", bookId);
                 resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Author is required");
@@ -135,7 +131,6 @@ public class CommentsServlet extends HttpServlet {
                 return;
             }
 
-            // Перевіряємо чи існує книга
             Book book = Beans.getBookRepo().findById(bookId);
             if (book == null) {
                 log.warn("POST /comments - book #{} not found", bookId);
@@ -143,7 +138,6 @@ public class CommentsServlet extends HttpServlet {
                 return;
             }
 
-            // Зберігаємо коментар
             Beans.getCommentRepo().add(bookId, author.trim(), text.trim());
 
             log.info("POST /comments - added comment for book #{} by '{}'",
