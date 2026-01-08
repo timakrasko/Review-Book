@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(#{app.title})}"></head>
+<body>
+
+<div th:replace="~{fragments/layout :: navbar}"></div>
+
+<div class="container mt-4">
+    <h2 th:text="#{app.title}">List of Books</h2>
+    <hr>
+
+    <div th:if="${#lists.isEmpty(books)}" class="alert alert-warning">
+        <span th:text="#{msg.no_books}">No books found</span>
+    </div>
+
+    <table class="table table-striped" th:unless="${#lists.isEmpty(books)}">
+        <thead>
+        <tr>
+            <th th:text="#{table.id}">ID</th>
+            <th th:text="#{table.title}">Title</th>
+            <th th:text="#{table.author}">Author</th>
+            <th th:text="#{table.year}">Year</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book : ${books}">
+            <td th:text="${book.id}">1</td>
+            <td th:text="${book.title}">Title</td>
+            <td th:text="${book.author}">Author</td>
+            <td th:text="${book.pubYear}">2020</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a th:href="@{/books/add}" class="btn btn-success" th:text="#{nav.add}">Add New</a>
+</div>
+
+</body>
+</html>

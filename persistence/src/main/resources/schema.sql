@@ -1,3 +1,6 @@
+-- Таблиці створюються лише якщо їх ще немає
+
+
 
 create table if not exists books (
                                      id identity primary key,
@@ -15,7 +18,27 @@ create table if not exists comments (
     constraint fk_book foreign key (book_id) references books(id) on delete cascade
     );
 
-INSERT INTO books (title, author, pub_year) VALUES ('Kobzar', 'Taras Shevchenko', 1840);
-INSERT INTO books (title, author, pub_year) VALUES ('Eneida', 'Ivan Kotliarevsky', 1798);
-INSERT INTO books (title, author, pub_year) VALUES ('Tiger Trappers', 'Ivan Bahrianyi', 1944);
-INSERT INTO books (title, author, pub_year) VALUES ('Forest Song', 'Lesia Ukrainka', 1911);
+-- Додавання книг лише якщо такої ще немає
+INSERT INTO books (title, author, pub_year)
+SELECT 'Kobzar', 'Taras Shevchenko', 1840
+    WHERE NOT EXISTS (
+    SELECT 1 FROM books WHERE title = 'Kobzar' AND author = 'Taras Shevchenko' AND pub_year = 1840
+);
+
+INSERT INTO books (title, author, pub_year)
+SELECT 'Eneida', 'Ivan Kotliarevsky', 1798
+    WHERE NOT EXISTS (
+    SELECT 1 FROM books WHERE title = 'Eneida' AND author = 'Ivan Kotliarevsky' AND pub_year = 1798
+);
+
+INSERT INTO books (title, author, pub_year)
+SELECT 'Tiger Trappers', 'Ivan Bahrianyi', 1944
+    WHERE NOT EXISTS (
+    SELECT 1 FROM books WHERE title = 'Tiger Trappers' AND author = 'Ivan Bahrianyi' AND pub_year = 1944
+);
+
+INSERT INTO books (title, author, pub_year)
+SELECT 'Forest Song', 'Lesia Ukrainka', 1911
+    WHERE NOT EXISTS (
+    SELECT 1 FROM books WHERE title = 'Forest Song' AND author = 'Lesia Ukrainka' AND pub_year = 1911
+);
