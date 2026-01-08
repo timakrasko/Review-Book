@@ -2,27 +2,29 @@
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 
-COPY pom.xml .
-COPY core/pom.xml core/pom.xml
-COPY persistence/pom.xml persistence/pom.xml
-COPY web/pom.xml web/pom.xml
+# Копіюємо все
 COPY . .
 
-# 1. Збираємо проєкт
+# Запускаємо збірку
 RUN mvn clean package -DskipTests -pl web -am
 
-# 2. УНІВЕРСАЛЬНИЙ ФІКС:
-# Знаходимо згенерований .jar (ігноруючи .original файл, який створює Spring)
-# і перейменовуємо його на app.jar прямо тут.
-RUN find web/target -maxdepth 1 -name "*.jar" ! -name "*original*" -exec mv {} web/target/app.jar \;
+# --- ДІАГНОСТИКА (ВИВЕСТИ ФАЙЛИ В ЛОГ) ---
+# Цей рядок покаже в логах Render, що саме створив Maven
+RUN echo "======= ВМІСТ ПАПКИ web/target =======" && \
+    ls -la web/target/ && \
+    echo "========================================"
+
+# --- МАГІЯ ПОШУКУ ---
+# Знаходимо будь-який JAR (окрім original) і копіюємо його в корінь як app.jar
+# Якщо файлу немає, ця команда впаде з помилкою, і ми це побачимо
+RUN find web/target -name "*.jar" ! -name "*original*" -exec cp {} /app/app.jar \;
 
 # --- Stage 2: Run ---
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
-# Тепер ми точно знаємо, що файл називається app.jar, бо ми його перейменували вище
-COPY --from=build /app/web/target/app.jar app.jar
+# Копіюємо файл, який ми підготували на попередньому етапі
+COPY --from=build /app/app.jar app.jar
 
 EXPOSE 8080
-
 ENTRYPOINT ["java", "-jar", "app.jar"]
