@@ -134,7 +134,8 @@
     </dependencies>
 
     <build>
-        <finalName>MPF_project</finalName>
+        <finalName>web-app</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
