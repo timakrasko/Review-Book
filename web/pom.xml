@@ -11,8 +11,7 @@
     </parent>
 
     <artifactId>web</artifactId>
-    <packaging>war</packaging>
-    <name>web</name>
+    <packaging>jar</packaging>
     <dependencies>
         <!-- Залежність на core модуль -->
         <dependency>
