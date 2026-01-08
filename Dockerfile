@@ -1,5 +1,4 @@
 # --- Stage 1: Build ---
-# Переконайтеся, що тут версія 21 (якщо ви оновили її для виправлення попередньої помилки)
 FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 
@@ -9,17 +8,20 @@ COPY persistence/pom.xml persistence/pom.xml
 COPY web/pom.xml web/pom.xml
 COPY . .
 
-# Збираємо проєкт
+# 1. Збираємо проєкт
 RUN mvn clean package -DskipTests -pl web -am
+
+# 2. УНІВЕРСАЛЬНИЙ ФІКС:
+# Знаходимо згенерований .jar (ігноруючи .original файл, який створює Spring)
+# і перейменовуємо його на app.jar прямо тут.
+RUN find web/target -maxdepth 1 -name "*.jar" ! -name "*original*" -exec mv {} web/target/app.jar \;
 
 # --- Stage 2: Run ---
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
-# ВИПРАВЛЕННЯ ТУТ:
-# 1. Ми точно знаємо шлях: /app/web/target/
-# 2. Ми точно знаємо ім'я: web-app.jar (бо ми задали його в pom.xml)
-COPY --from=build /app/web/target/web-app.jar app.jar
+# Тепер ми точно знаємо, що файл називається app.jar, бо ми його перейменували вище
+COPY --from=build /app/web/target/app.jar app.jar
 
 EXPOSE 8080
 
