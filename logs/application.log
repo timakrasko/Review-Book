@@ -1,0 +1,868 @@
+2025-12-29 14:33:11.705 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 32568 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 14:33:11.706 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 14:33:11.707 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 14:33:12.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 14:33:12.230 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:33:12.233 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 14:33:12.233 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 14:33:12.316 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 14:33:12.320 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 14:33:12.320 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 592 ms
+2025-12-29 14:33:12.384 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 14:33:12.495 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 14:33:12.496 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 14:33:12.531 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 14:33:12.653 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 14:33:12.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:33:12.694 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 14:33:12.699 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.209 seconds (process running for 1.693)
+2025-12-29 14:33:17.465 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 14:33:17.465 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 14:33:17.466 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 14:33:35.592 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 14:33:35.679 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 14:33:35.683 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 14:33:35.684 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 14:33:37.128 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 9148 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 14:33:37.129 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 14:33:37.129 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 14:33:37.645 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 14:33:37.652 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:33:37.653 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 14:33:37.653 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 14:33:37.731 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 14:33:37.735 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 14:33:37.735 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+2025-12-29 14:33:37.800 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 14:33:37.913 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 14:33:37.914 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 14:33:37.936 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 14:33:38.079 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 14:33:38.104 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:33:38.117 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 14:33:38.121 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.193 seconds (process running for 1.603)
+2025-12-29 14:33:42.689 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 14:33:42.689 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 14:33:42.689 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 14:34:03.417 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 14:34:03.502 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 14:34:03.505 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 14:34:03.506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 14:34:04.714 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 33912 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 14:34:04.714 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 14:34:04.715 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 14:34:05.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 14:34:05.229 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:34:05.229 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 14:34:05.230 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 14:34:05.328 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 14:34:05.331 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 14:34:05.331 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2025-12-29 14:34:05.394 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 14:34:05.515 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 14:34:05.516 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 14:34:05.536 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 14:34:05.658 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 14:34:05.681 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:34:05.693 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 14:34:05.698 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.177 seconds (process running for 1.561)
+2025-12-29 14:35:03.965 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 14:35:04.045 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 14:35:04.048 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 14:35:04.049 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 14:35:28.047 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 35272 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 14:35:28.048 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 14:35:28.049 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 14:35:28.560 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 14:35:28.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:35:28.567 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 14:35:28.567 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 14:35:28.645 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 14:35:28.648 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 14:35:28.648 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 575 ms
+2025-12-29 14:35:28.715 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 14:35:28.836 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 14:35:28.837 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 14:35:28.861 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 14:35:28.983 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 14:35:29.006 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:35:29.020 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 14:35:29.024 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.177 seconds (process running for 1.627)
+2025-12-29 14:35:31.107 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 14:35:31.107 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 14:35:31.108 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 14:37:26.656 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 14:37:26.749 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 14:37:26.751 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 14:37:26.753 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 14:37:28.885 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 13000 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 14:37:28.886 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 14:37:28.887 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 14:37:29.413 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 14:37:29.420 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:37:29.421 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 14:37:29.421 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 14:37:29.498 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 14:37:29.502 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 14:37:29.502 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 591 ms
+2025-12-29 14:37:29.566 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 14:37:29.679 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 14:37:29.680 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 14:37:29.704 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 14:37:29.823 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 14:37:29.844 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 14:37:29.857 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 14:37:29.862 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.192 seconds (process running for 1.621)
+2025-12-29 14:37:30.976 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 14:37:30.977 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 14:37:30.977 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 14:37:30.996 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 14:37:30.997 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 14:37:31.010 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 14:41:40.926 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 14:41:40.987 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 14:41:40.989 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 14:41:40.989 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 15:03:04.221 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 20504 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 15:03:04.222 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 15:03:04.223 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 15:03:04.754 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 15:03:04.760 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:03:04.761 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 15:03:04.761 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 15:03:04.842 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 15:03:04.846 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 15:03:04.846 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 599 ms
+2025-12-29 15:03:04.911 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 15:03:05.030 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 15:03:05.030 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 15:03:05.054 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 15:03:05.191 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 15:03:05.214 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:03:05.228 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 15:03:05.232 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.212 seconds (process running for 1.603)
+2025-12-29 15:03:06.292 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 15:03:06.292 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 15:03:06.293 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 15:03:06.313 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 15:03:06.313 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 15:03:06.326 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 15:04:53.189 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 15:04:53.275 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 15:04:53.278 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 15:04:53.279 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 15:07:02.089 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 5568 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 15:07:02.090 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 15:07:02.091 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 15:07:02.615 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 15:07:02.622 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:07:02.622 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 15:07:02.623 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 15:07:02.709 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 15:07:02.713 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 15:07:02.713 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 600 ms
+2025-12-29 15:07:02.779 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 15:07:02.905 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 15:07:02.906 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 15:07:02.929 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 15:07:03.055 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 15:07:03.079 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:07:03.093 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 15:07:03.097 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.207 seconds (process running for 1.598)
+2025-12-29 15:07:04.468 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 15:07:04.468 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 15:07:04.469 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 15:07:04.492 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 15:07:04.493 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 15:07:04.504 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 15:10:06.821 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 15:10:06.910 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 15:10:06.912 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 15:10:06.913 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 15:10:08.484 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 9396 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 15:10:08.485 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 15:10:08.486 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 15:10:09.005 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 15:10:09.011 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:10:09.012 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 15:10:09.012 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 15:10:09.090 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 15:10:09.094 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 15:10:09.094 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 586 ms
+2025-12-29 15:10:09.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 15:10:09.271 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 15:10:09.272 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 15:10:09.295 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 15:10:09.416 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 15:10:09.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 15:10:09.452 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 15:10:09.457 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.175 seconds (process running for 1.584)
+2025-12-29 15:10:11.367 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 15:10:11.367 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 15:10:11.368 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 15:10:11.394 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 15:10:11.394 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 15:10:11.408 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 17:44:12.801 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 15132 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 17:44:12.802 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 17:44:12.802 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 17:44:13.394 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 17:44:13.401 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 17:44:13.402 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 17:44:13.402 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 17:44:13.490 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 17:44:13.494 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 17:44:13.494 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 668 ms
+2025-12-29 17:44:13.567 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 17:44:13.717 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 17:44:13.718 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 17:44:13.741 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 17:44:13.886 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 17:44:13.911 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 17:44:13.925 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 17:44:13.931 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.356 seconds (process running for 3.069)
+2025-12-29 17:44:16.151 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 17:44:16.151 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 17:44:16.152 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 17:44:16.182 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 17:44:16.182 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 17:44:16.197 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 17:44:16.247 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 17:44:16.247 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 17:44:16.248 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:52:28.031 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 18:52:28.119 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 18:52:28.122 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 18:52:28.123 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 18:52:48.998 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 35292 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 18:52:49.001 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 18:52:49.001 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 18:52:49.519 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 18:52:49.526 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:52:49.527 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 18:52:49.527 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 18:52:49.613 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 18:52:49.617 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 18:52:49.617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2025-12-29 18:52:49.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 18:52:49.812 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 18:52:49.813 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 18:52:49.835 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 18:52:49.969 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 18:52:49.994 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:52:50.007 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 18:52:50.011 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.197 seconds (process running for 2.764)
+2025-12-29 18:54:18.150 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 18:54:18.213 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 18:54:18.215 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 18:54:18.216 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 18:54:21.808 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 20376 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 18:54:21.811 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 18:54:21.811 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 18:54:22.326 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 18:54:22.332 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:54:22.333 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 18:54:22.333 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 18:54:22.412 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 18:54:22.415 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 18:54:22.415 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 583 ms
+2025-12-29 18:54:22.480 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 18:54:22.598 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 18:54:22.599 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 18:54:22.620 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 18:54:22.749 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 18:54:22.772 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:54:22.786 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 18:54:22.790 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.173 seconds (process running for 2.749)
+2025-12-29 18:54:24.752 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 18:54:24.752 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 18:54:24.753 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 18:54:24.778 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:54:24.778 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:54:24.791 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:54:26.583 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:54:26.583 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:54:26.583 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:54:34.677 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 18:54:34.767 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 18:54:34.770 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 18:54:34.771 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 18:54:36.251 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 26456 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 18:54:36.252 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 18:54:36.253 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 18:54:36.768 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 18:54:36.774 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:54:36.774 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 18:54:36.774 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 18:54:36.859 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 18:54:36.864 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 18:54:36.864 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
+2025-12-29 18:54:36.932 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 18:54:37.057 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 18:54:37.059 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 18:54:37.081 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 18:54:37.205 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 18:54:37.231 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:54:37.246 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 18:54:37.250 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.197 seconds (process running for 1.632)
+2025-12-29 18:54:38.188 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 18:54:38.189 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 18:54:38.189 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 18:54:38.210 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:54:38.211 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:54:38.221 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:55:03.432 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 18:55:03.521 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 18:55:03.524 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 18:55:03.526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 18:55:05.521 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 22956 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 18:55:05.522 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 18:55:05.522 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 18:55:06.046 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 18:55:06.052 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:55:06.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 18:55:06.053 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 18:55:06.133 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 18:55:06.136 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 18:55:06.137 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 591 ms
+2025-12-29 18:55:06.203 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 18:55:06.319 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 18:55:06.320 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 18:55:06.344 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 18:55:06.471 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 18:55:06.494 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:55:06.506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 18:55:06.511 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.212 seconds (process running for 1.639)
+2025-12-29 18:55:08.224 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 18:55:08.226 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 18:55:08.227 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 18:55:08.250 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:55:08.250 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:55:08.262 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:55:08.274 [http-nio-8080-exec-1] WARN  o.s.w.s.r.ResourceHandlerUtils - "Path with "WEB-INF" or "META-INF": [WEB-INF/views/books]"
+2025-12-29 18:55:25.169 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 18:55:25.276 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 18:55:25.279 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 18:55:25.280 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 18:55:27.199 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 27644 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 18:55:27.201 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 18:55:27.201 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 18:55:27.738 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 18:55:27.745 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:55:27.746 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 18:55:27.746 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 18:55:27.822 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 18:55:27.825 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 18:55:27.826 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 601 ms
+2025-12-29 18:55:27.891 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 18:55:28.006 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 18:55:28.006 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 18:55:28.029 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 18:55:28.152 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 18:55:28.174 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 18:55:28.188 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 18:55:28.192 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.187 seconds (process running for 1.589)
+2025-12-29 18:55:30.230 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 18:55:30.231 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 18:55:30.231 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 18:55:30.252 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:55:30.252 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:55:30.266 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:55:51.950 [http-nio-8080-exec-8] INFO  sumdu.edu.ua.web.BooksApiController - GET /api/books - page=0, size=10, q='null', sort='null'
+2025-12-29 18:56:33.420 [http-nio-8080-exec-3] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:56:33.420 [http-nio-8080-exec-3] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:56:33.420 [http-nio-8080-exec-3] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:57:21.326 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'bookId' for method parameter type long is not present]
+2025-12-29 18:57:54.925 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:57:54.925 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:57:54.926 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:57:55.998 [http-nio-8080-exec-5] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:57:55.998 [http-nio-8080-exec-5] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:57:55.999 [http-nio-8080-exec-5] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:57:56.537 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 18:57:56.537 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 18:57:56.537 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 18:58:07.627 [http-nio-8080-exec-8] INFO  sumdu.edu.ua.web.BooksApiController - GET /api/books - page=0, size=10, q='null', sort='null'
+2025-12-29 19:00:17.355 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:00:17.423 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:00:17.425 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:00:17.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:00:38.562 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 6740 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:00:38.563 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:00:38.564 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:00:39.071 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:00:39.082 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:00:39.083 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:00:39.083 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:00:39.171 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:00:39.174 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:00:39.174 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 586 ms
+2025-12-29 19:00:39.237 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:00:39.357 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:00:39.358 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:00:39.380 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:00:39.503 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:00:39.526 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:00:39.538 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:00:39.543 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.185 seconds (process running for 1.581)
+2025-12-29 19:00:41.948 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:00:41.949 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:00:41.949 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 19:00:41.968 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:00:41.968 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:00:41.978 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:00:52.724 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:00:52.724 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:00:52.725 [http-nio-8080-exec-4] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:03:11.079 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:03:11.170 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:03:11.173 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:03:11.174 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:03:14.244 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 26796 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:03:14.246 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:03:14.246 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:03:14.763 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:03:14.769 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:03:14.770 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:03:14.770 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:03:14.851 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:03:14.854 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:03:14.855 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 586 ms
+2025-12-29 19:03:14.917 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:03:15.037 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:03:15.038 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:03:15.062 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:03:15.186 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:03:15.208 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:03:15.220 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:03:15.225 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.182 seconds (process running for 1.578)
+2025-12-29 19:03:16.625 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:03:16.625 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:03:16.626 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:03:16.648 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:03:16.648 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:03:16.658 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:04:24.645 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:04:24.737 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:04:24.740 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:04:24.741 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:04:26.782 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 2148 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:04:26.783 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:04:26.783 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:04:27.313 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:04:27.319 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:04:27.320 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:04:27.320 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:04:27.397 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:04:27.400 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:04:27.401 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+2025-12-29 19:04:27.464 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:04:27.580 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:04:27.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:04:27.605 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:04:27.729 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:04:27.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:04:27.764 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:04:27.768 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.181 seconds (process running for 1.573)
+2025-12-29 19:04:28.753 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:04:28.753 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:04:28.754 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:04:28.774 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:04:28.774 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:04:28.784 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:04:55.888 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:04:55.993 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:04:55.995 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:04:55.996 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:04:57.416 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 8580 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:04:57.418 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:04:57.418 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:04:57.920 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:04:57.927 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:04:57.927 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:04:57.928 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:04:58.005 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:04:58.009 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:04:58.009 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 568 ms
+2025-12-29 19:04:58.071 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:04:58.189 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:04:58.190 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:04:58.212 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:04:58.341 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:04:58.364 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:04:58.377 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:04:58.382 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.17 seconds (process running for 1.566)
+2025-12-29 19:04:59.829 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:04:59.829 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:04:59.830 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:04:59.846 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:04:59.846 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:04:59.858 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:05:08.258 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:05:08.350 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:05:08.352 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:05:08.354 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:05:10.422 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 16624 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:05:10.424 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:05:10.424 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:05:10.925 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:05:10.931 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:05:10.932 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:05:10.932 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:05:11.008 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:05:11.012 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:05:11.012 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 566 ms
+2025-12-29 19:05:11.073 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:05:11.187 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:05:11.188 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:05:11.212 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:05:11.331 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:05:11.354 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:05:11.367 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:05:11.372 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.14 seconds (process running for 1.524)
+2025-12-29 19:05:15.365 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:05:15.365 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:05:15.366 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:05:15.387 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:05:15.387 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:05:15.403 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:05:26.648 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:05:26.741 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:05:26.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:05:26.745 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:05:28.789 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 22992 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:05:28.791 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:05:28.791 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:05:29.307 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:05:29.315 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:05:29.316 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:05:29.316 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:05:29.406 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:05:29.410 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:05:29.410 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 595 ms
+2025-12-29 19:05:29.474 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:05:29.596 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:05:29.597 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:05:29.620 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:05:29.750 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:05:29.775 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:05:29.787 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:05:29.792 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.223 seconds (process running for 1.621)
+2025-12-29 19:05:30.923 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:05:30.923 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:05:30.923 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 19:05:30.944 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:05:30.944 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:05:30.954 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:05:32.215 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:05:32.216 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:05:32.216 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:10:44.614 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:10:44.694 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:10:44.696 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:10:44.697 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:10:46.092 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 26396 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:10:46.094 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:10:46.094 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:10:46.618 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:10:46.624 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:10:46.625 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:10:46.625 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:10:46.704 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:10:46.708 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:10:46.708 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+2025-12-29 19:10:46.771 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:10:46.886 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:10:46.887 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:10:46.910 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:10:47.030 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:10:47.052 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:10:47.066 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:10:47.070 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.167 seconds (process running for 1.579)
+2025-12-29 19:10:48.465 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:10:48.465 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:10:48.466 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:10:48.486 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:10:48.486 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:10:48.497 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:10:50.894 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:10:50.894 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:10:50.895 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:11:26.536 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:11:26.621 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:11:26.623 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:11:26.624 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:11:28.325 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 21704 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:11:28.326 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:11:28.327 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:11:28.849 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:11:28.856 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:11:28.857 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:11:28.857 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:11:28.936 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:11:28.940 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:11:28.940 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 591 ms
+2025-12-29 19:11:29.001 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:11:29.116 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:11:29.117 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:11:29.254 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:11:29.277 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:11:29.291 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:11:29.296 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.16 seconds (process running for 1.569)
+2025-12-29 19:11:30.568 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:11:30.568 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:11:30.569 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:11:30.591 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:11:30.591 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:11:30.605 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 0 books
+2025-12-29 19:12:56.858 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:12:56.943 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:12:56.946 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:12:56.947 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:12:58.763 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 9164 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:12:58.764 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:12:58.764 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:12:59.274 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:12:59.281 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:12:59.282 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:12:59.282 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:12:59.362 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:12:59.365 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:12:59.365 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 577 ms
+2025-12-29 19:12:59.427 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:12:59.547 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:12:59.548 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:12:59.573 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2025-12-29 19:12:59.692 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:12:59.714 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:12:59.727 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:12:59.732 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.16 seconds (process running for 1.537)
+2025-12-29 19:13:01.133 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:13:01.134 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:13:01.135 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:13:01.164 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:13:01.164 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:13:01.183 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:13:03.167 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:13:03.167 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:13:03.168 [http-nio-8080-exec-2] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:13:24.742 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:13:24.829 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:13:24.832 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:13:24.833 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:14:13.085 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 32140 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:14:13.086 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:14:13.087 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:14:13.579 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:14:13.585 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:14:13.586 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:14:13.586 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:14:13.665 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:14:13.668 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:14:13.668 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+2025-12-29 19:14:13.728 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:14:13.842 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:14:13.843 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:14:13.982 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:14:14.004 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:14:14.017 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:14:14.021 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.137 seconds (process running for 1.574)
+2025-12-29 19:14:15.687 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:14:15.687 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:14:15.688 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 19:14:15.710 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:14:15.710 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:14:15.721 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:14:34.262 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:14:34.345 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:14:34.348 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:14:34.349 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:14:35.755 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 29228 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:14:35.756 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:14:35.756 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:14:36.254 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:14:36.261 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:14:36.262 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:14:36.262 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:14:36.342 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:14:36.345 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:14:36.346 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 567 ms
+2025-12-29 19:14:36.406 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:14:36.519 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:14:36.520 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:14:36.662 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:14:36.684 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:14:36.697 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:14:36.701 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.151 seconds (process running for 1.614)
+2025-12-29 19:14:37.731 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:14:37.731 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:14:37.732 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:14:37.756 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:14:37.756 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:14:37.768 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:14:41.959 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:14:42.045 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:14:42.047 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:14:42.049 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:15:20.252 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 12784 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:15:20.253 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:15:20.253 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:15:20.791 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:15:20.798 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:15:20.799 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:15:20.799 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:15:20.894 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:15:20.898 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:15:20.898 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 622 ms
+2025-12-29 19:15:20.965 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:15:21.089 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:15:21.090 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:15:21.241 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:15:21.266 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:15:21.280 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:15:21.285 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.228 seconds (process running for 1.658)
+2025-12-29 19:16:06.079 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:16:06.079 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:16:06.080 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 19:16:06.105 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:16:06.105 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:16:06.122 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:18:12.044 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:18:12.133 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:18:12.135 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:18:12.136 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:18:14.316 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 34616 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:18:14.317 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:18:14.317 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:18:14.818 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:18:14.825 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:18:14.826 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:18:14.826 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:18:14.912 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:18:14.915 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:18:14.915 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 575 ms
+2025-12-29 19:18:14.992 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:18:15.115 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:18:15.116 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:18:15.259 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:18:15.283 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:18:15.296 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:18:15.300 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.174 seconds (process running for 1.578)
+2025-12-29 19:18:19.282 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:18:19.282 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:18:19.283 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:18:19.309 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:18:19.309 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:18:19.327 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:20:02.847 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:20:02.936 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:20:02.939 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:20:02.940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:20:05.009 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 35644 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:20:05.010 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:20:05.010 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:20:05.517 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:20:05.526 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:20:05.527 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:20:05.527 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:20:05.604 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:20:05.608 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:20:05.608 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 576 ms
+2025-12-29 19:20:05.669 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:20:05.785 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:20:05.786 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:20:05.924 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:20:05.947 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:20:05.960 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:20:05.964 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.142 seconds (process running for 1.557)
+2025-12-29 19:20:07.701 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:20:07.702 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:20:07.703 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:20:07.733 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:20:07.733 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:20:07.752 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:26:45.218 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:26:45.297 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:26:45.300 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:26:45.301 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:26:46.686 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 13096 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:26:46.688 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:26:46.688 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:26:47.190 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:26:47.198 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:26:47.199 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:26:47.199 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:26:47.277 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:26:47.280 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:26:47.280 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 569 ms
+2025-12-29 19:26:47.342 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:26:47.461 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:26:47.462 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:26:47.619 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:26:47.645 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:26:47.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:26:47.664 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.187 seconds (process running for 1.612)
+2025-12-29 19:26:50.288 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:26:50.288 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:26:50.289 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:26:50.317 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:26:50.317 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:26:50.335 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:27:06.870 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:27:06.958 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:27:06.960 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:27:06.962 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:27:08.583 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 34896 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:27:08.585 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:27:08.585 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:27:09.091 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:27:09.098 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:27:09.099 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:27:09.099 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:27:09.185 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:27:09.189 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:27:09.189 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+2025-12-29 19:27:09.252 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:27:09.371 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:27:09.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:27:09.513 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:27:09.536 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:27:09.549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:27:09.553 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.164 seconds (process running for 1.655)
+2025-12-29 19:27:10.622 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:27:10.623 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:27:10.623 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-29 19:27:10.644 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:27:10.645 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:27:10.658 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:28:08.176 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:28:08.248 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:28:08.250 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:28:08.252 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-29 19:28:09.623 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 30792 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project)
+2025-12-29 19:28:09.624 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-12-29 19:28:09.624 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-29 19:28:10.174 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-29 19:28:10.181 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:28:10.182 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-29 19:28:10.182 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-29 19:28:10.263 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-29 19:28:10.266 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-29 19:28:10.267 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 618 ms
+2025-12-29 19:28:10.331 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-29 19:28:10.449 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2025-12-29 19:28:10.450 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-29 19:28:10.600 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2025-12-29 19:28:10.629 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-29 19:28:10.644 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-29 19:28:10.649 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.249 seconds (process running for 1.675)
+2025-12-29 19:28:12.845 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-29 19:28:12.845 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-29 19:28:12.846 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-29 19:28:12.865 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2025-12-29 19:28:12.865 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2025-12-29 19:28:12.876 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 4 books
+2025-12-29 19:28:39.857 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-29 19:28:39.944 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-29 19:28:39.947 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-29 19:28:39.948 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

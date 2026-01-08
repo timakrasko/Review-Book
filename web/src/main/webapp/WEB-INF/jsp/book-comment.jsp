@@ -133,6 +133,7 @@
             <input type="hidden" name="_method" value="delete">
             <input type="hidden" name="bookId" value="<%= book.getId() %>">
             <input type="hidden" name="commentId" value="<%= comment.getId() %>">
+            <input type="hidden" name="createdAt" value="<%= comment.getCreatedAt().toString() %>">
             <button type="submit" class="delete-btn"
                     onclick="return confirm('Видалити цей відгук?')">
                 🗑️ Видалити

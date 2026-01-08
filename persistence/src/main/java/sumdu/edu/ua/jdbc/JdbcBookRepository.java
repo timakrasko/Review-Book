@@ -6,13 +6,26 @@ import sumdu.edu.ua.core.domain.PageRequest;
 import sumdu.edu.ua.core.port.CatalogRepositoryPort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 
+/**
+ * JDBC реалізація репозиторію книг
+ * @Repository позначає клас як репозиторій (спеціалізований @Component)
+ * Демонструє ін'єкцію залежностей через конструктор
+ */
+@Repository
 public class JdbcBookRepository implements CatalogRepositoryPort {
 
     private static final Logger log = LoggerFactory.getLogger(JdbcBookRepository.class);
+    private final DataSource dataSource;
+
+    public JdbcBookRepository(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Override
     public Page<Book> search(String q, PageRequest request) {
@@ -25,7 +38,7 @@ public class JdbcBookRepository implements CatalogRepositoryPort {
         }
         sql += " order by id desc limit ? offset ?";
 
-        try (var c = Db.get();
+        try (var c = dataSource.getConnection();
              var ps = c.prepareStatement(sql)) {
 
             int i = 1;
@@ -66,7 +79,7 @@ public class JdbcBookRepository implements CatalogRepositoryPort {
 
     @Override
     public Book findById(long id) {
-        try (var c = Db.get();
+        try (var c = dataSource.getConnection();
              var ps = c.prepareStatement(
                      "select id, title, author, pub_year from books where id = ?")) {
             ps.setLong(1, id);
@@ -88,7 +101,7 @@ public class JdbcBookRepository implements CatalogRepositoryPort {
 
     @Override
     public Book add(String title, String author, int pubYear) {
-        try (Connection c = Db.get();
+        try (Connection c = dataSource.getConnection();
              PreparedStatement ps = c.prepareStatement(
                      "INSERT INTO books(title, author, pub_year) VALUES (?,?,?)",
                      Statement.RETURN_GENERATED_KEYS)) {

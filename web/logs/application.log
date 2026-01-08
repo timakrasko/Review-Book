@@ -1,27 +1,29 @@
-2025-12-08 14:51:09.303 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 15:02:05.040 [qtp847372226-43] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:02:34.641 [qtp847372226-44] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:02:52.667 [qtp847372226-43] INFO  s.edu.ua.jdbc.JdbcCommentRepository - DB: new comment #1, book=1, author='Tima', len=4
-2025-12-08 15:02:52.871 [qtp847372226-43] INFO  sumdu.edu.ua.web.CommentsServlet - POST /comments - added comment for book #1 by 'Tima'
-2025-12-08 15:02:52.875 [qtp847372226-44] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:03:35.868 [qtp847372226-43] INFO  sumdu.edu.ua.web.CommentsServlet - DELETE /comments - deleting comment #1 for book #1
-2025-12-08 15:03:35.883 [qtp847372226-43] INFO  s.edu.ua.jdbc.JdbcCommentRepository - DB: deleted comment #1 for book 1
-2025-12-08 15:03:36.092 [qtp847372226-46] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:04:40.403 [qtp847372226-107] INFO  sumdu.edu.ua.web.CommentsServlet - POST /comments - added comment for book #1 by 'Tima'
-2025-12-08 15:04:40.408 [qtp847372226-43] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:05:58.922 [qtp847372226-42] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=2
-2025-12-08 15:07:03.800 [qtp847372226-48] INFO  sumdu.edu.ua.web.CommentsServlet - DELETE /comments - deleting comment #2 for book #1
-2025-12-08 15:07:04.023 [qtp847372226-38] INFO  sumdu.edu.ua.web.CommentsServlet - GET /comments - bookId=1
-2025-12-08 15:24:38.593 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 15:25:03.625 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 15:44:57.563 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 17:38:41.360 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 17:38:52.317 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 17:39:10.002 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 17:39:29.448 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 17:39:35.856 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 18:25:10.065 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 18:26:56.556 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 18:27:20.474 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 18:29:28.471 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
-2025-12-08 18:29:34.339 [main] INFO  c.tngtech.archunit.core.PluginLoader - Detected Java version 19.0.2
+2026-01-08 13:09:28.806 [main] INFO  sumdu.edu.ua.Application - Starting Application using Java 19.0.2 with PID 17040 (C:\Users\Tima\IdeaProjects\MPF_project\web\target\classes started by Tima in C:\Users\Tima\IdeaProjects\MPF_project\web)
+2026-01-08 13:09:28.809 [main] DEBUG sumdu.edu.ua.Application - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-01-08 13:09:28.810 [main] INFO  sumdu.edu.ua.Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-08 13:09:29.440 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-08 13:09:29.447 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-08 13:09:29.448 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-08 13:09:29.449 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-08 13:09:29.542 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2026-01-08 13:09:29.546 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-08 13:09:29.547 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 710 ms
+2026-01-08 13:09:29.621 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-08 13:09:29.774 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/guest user=SA
+2026-01-08 13:09:29.775 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-08 13:09:29.804 [main] INFO  sumdu.edu.ua.jdbc.DbInit - Database schema initialized successfully
+2026-01-08 13:09:29.950 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/guest'
+2026-01-08 13:09:29.973 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-08 13:09:29.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-08 13:09:29.994 [main] INFO  sumdu.edu.ua.Application - Started Application in 1.447 seconds (process running for 3.465)
+2026-01-08 13:09:31.810 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-08 13:09:31.811 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-08 13:09:31.811 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-08 13:09:31.836 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - BooksController.listBooks() called
+2026-01-08 13:09:31.837 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Searching books with repository: sumdu.edu.ua.jdbc.JdbcBookRepository$$SpringCGLIB$$0
+2026-01-08 13:09:31.850 [http-nio-8080-exec-1] INFO  sumdu.edu.ua.web.BooksController - Found 8 books
+2026-01-08 16:07:47.732 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h41m46s861ms190µs).
+2026-01-08 16:25:27.176 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-08 16:25:27.291 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-08 16:25:27.294 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-08 16:25:27.295 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

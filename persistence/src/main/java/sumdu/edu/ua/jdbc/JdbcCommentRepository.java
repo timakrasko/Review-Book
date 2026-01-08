@@ -1,143 +1,106 @@
 package sumdu.edu.ua.jdbc;
 
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 import sumdu.edu.ua.core.domain.Comment;
 import sumdu.edu.ua.core.domain.Page;
 import sumdu.edu.ua.core.domain.PageRequest;
 import sumdu.edu.ua.core.port.CommentRepositoryPort;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.sql.Timestamp;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * JDBC реалізація репозиторію коментарів
+ * Використовує Spring JdbcTemplate
+ */
+@Repository
 public class JdbcCommentRepository implements CommentRepositoryPort {
 
     private static final Logger log = LoggerFactory.getLogger(JdbcCommentRepository.class);
+    private final JdbcTemplate jdbcTemplate;
+
+    public JdbcCommentRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
+    private final RowMapper<Comment> commentMapper = (rs, rowNum) -> new Comment(
+            rs.getLong("id"),
+            rs.getLong("book_id"),
+            rs.getString("author"),
+            rs.getString("text"),
+            rs.getTimestamp("created_at").toInstant()
+    );
 
     @Override
     public void add(long bookId, String author, String text) {
-        try (var c = Db.get();
-             var ps = c.prepareStatement(
-                     "insert into comments(book_id, author, text) values (?, ?, ?)",
-                     Statement.RETURN_GENERATED_KEYS)) {
-
-            ps.setLong(1, bookId);
-            ps.setString(2, author);
-            ps.setString(3, text);
-            ps.executeUpdate();
-
-            try (var keys = ps.getGeneratedKeys()) {
-                if (keys.next()) {
-                    long id = keys.getLong(1);
-                    log.info("DB: new comment #{}, book={}, author='{}', len={}",
-                            id, bookId, author, text.length());
-                }
-            }
-        } catch (SQLException e) {
-            log.error("DB insert error for book={}, author='{}'", bookId, author, e);
-            throw new RuntimeException("DB insert error", e);
-        }
+        jdbcTemplate.update(
+                "INSERT INTO comments(book_id, author, text) VALUES (?, ?, ?)",
+                bookId, author, text
+        );
+        log.info("DB: new comment for book={}, author='{}', len={}",
+                bookId, author, text.length());
     }
 
     @Override
     public Page<Comment> list(long bookId, String author, Instant since, PageRequest request) {
-        var items = new ArrayList<Comment>();
-        long total = 0;
-
         StringBuilder sql = new StringBuilder(
-                "select id, author, text, created_at from comments where book_id = ?"
+                "SELECT id, book_id, author, text, created_at FROM comments WHERE book_id = ?"
         );
+        List<Object> params = new ArrayList<>();
+        params.add(bookId);
 
         if (author != null && !author.isBlank()) {
-            sql.append(" and lower(author) like ?");
+            sql.append(" AND LOWER(author) LIKE ?");
+            params.add("%" + author.toLowerCase() + "%");
         }
         if (since != null) {
-            sql.append(" and created_at >= ?");
+            sql.append(" AND created_at >= ?");
+            params.add(Timestamp.from(since));
         }
 
-        sql.append(" order by created_at desc limit ? offset ?");
+        sql.append(" ORDER BY created_at DESC LIMIT ? OFFSET ?");
+        params.add(request.getSize());
+        params.add(request.getPage() * request.getSize());
 
-        try (var c = Db.get();
-             var ps = c.prepareStatement(sql.toString())) {
+        List<Comment> items = jdbcTemplate.query(sql.toString(), commentMapper, params.toArray());
 
-            int i = 1;
-            ps.setLong(i++, bookId);
+        // Підрахунок total
+        StringBuilder countSql = new StringBuilder("SELECT COUNT(*) FROM comments WHERE book_id = ?");
+        List<Object> countParams = new ArrayList<>();
+        countParams.add(bookId);
 
-            if (author != null && !author.isBlank()) {
-                ps.setString(i++, "%" + author.toLowerCase() + "%");
-            }
-            if (since != null) {
-                ps.setTimestamp(i++, Timestamp.from(since));
-            }
-
-            ps.setInt(i++, request.getSize());
-            ps.setInt(i, request.getPage() * request.getSize());
-
-            try (var rs = ps.executeQuery()) {
-                while (rs.next()) {
-                    items.add(new Comment(
-                            rs.getLong("id"),
-                            bookId,
-                            rs.getString("author"),
-                            rs.getString("text"),
-                            rs.getTimestamp("created_at").toInstant()
-                    ));
-                }
-            }
-
-            // Підрахунок загальної кількості
-            StringBuilder countSql = new StringBuilder("select count(*) from comments where book_id = ?");
-            if (author != null && !author.isBlank()) {
-                countSql.append(" and lower(author) like ?");
-            }
-            if (since != null) {
-                countSql.append(" and created_at >= ?");
-            }
-
-            try (var countPs = c.prepareStatement(countSql.toString())) {
-                int j = 1;
-                countPs.setLong(j++, bookId);
-                if (author != null && !author.isBlank()) {
-                    countPs.setString(j++, "%" + author.toLowerCase() + "%");
-                }
-                if (since != null) {
-                    countPs.setTimestamp(j, Timestamp.from(since));
-                }
-
-                try (var rs = countPs.executeQuery()) {
-                    if (rs.next()) {
-                        total = rs.getLong(1);
-                    }
-                }
-            }
-
-        } catch (SQLException e) {
-            log.error("DB query error for book={}", bookId, e);
-            throw new RuntimeException("DB query error", e);
+        if (author != null && !author.isBlank()) {
+            countSql.append(" AND LOWER(author) LIKE ?");
+            countParams.add("%" + author.toLowerCase() + "%");
+        }
+        if (since != null) {
+            countSql.append(" AND created_at >= ?");
+            countParams.add(Timestamp.from(since));
         }
 
-        return new Page<>(items, request, total);
+        Long total = jdbcTemplate.queryForObject(countSql.toString(), Long.class, countParams.toArray());
+
+        return new Page<>(items, request, total != null ? total : 0);
     }
 
     @Override
     public void delete(long bookId, long commentId) {
-        try (var c = Db.get();
-             var ps = c.prepareStatement(
-                     "delete from comments where id=? and book_id=?")) {
-            ps.setLong(1, commentId);
-            ps.setLong(2, bookId);
-            int rows = ps.executeUpdate();
-            if (rows > 0) {
-                log.info("DB: deleted comment #{} for book {}", commentId, bookId);
-            } else {
-                log.warn("DB: comment #{} not found for book {}", commentId, bookId);
-            }
-        } catch (SQLException e) {
-            log.error("DB delete error for comment={}, book={}", commentId, bookId, e);
-            throw new RuntimeException("DB delete error", e);
+        int rows = jdbcTemplate.update(
+                "DELETE FROM comments WHERE id=? AND book_id=?",
+                commentId, bookId
+        );
+        if (rows > 0) {
+            log.info("DB: deleted comment #{} for book {}", commentId, bookId);
+        } else {
+            log.warn("DB: comment #{} not found for book {}", commentId, bookId);
         }
     }
 }
