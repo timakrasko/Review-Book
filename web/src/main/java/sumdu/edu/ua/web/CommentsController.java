@@ -62,18 +62,15 @@ public class CommentsController {
                 return ResponseEntity.badRequest().body(Map.of("error", "Text is required"));
             }
 
-            // 2. Перевірка існування книги
             Book book = bookRepository.findById(bookId);
             if (book == null) {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND)
                         .body(Map.of("error", "Book not found with id: " + bookId));
             }
 
-            // 3. Збереження коментаря
             commentRepository.add(bookId, author, text);
             log.info("Comment added to book #{}", bookId);
 
-            // 4. Повернення успішного статусу (201 Created)
             return ResponseEntity.status(HttpStatus.CREATED)
                     .body(Map.of("message", "Comment added successfully", "bookId", bookId));
 

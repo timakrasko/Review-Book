@@ -33,8 +33,7 @@ public class TestController {
         if (catalogRepositoryPort != null) {
             result.put("repositoryClass", catalogRepositoryPort.getClass().getName());
         }
-        
-        // Перевірка всіх бінів CatalogRepositoryPort
+
         try {
             Map<String, CatalogRepositoryPort> beans = applicationContext.getBeansOfType(CatalogRepositoryPort.class);
             result.put("repositoryBeans", beans.keySet());

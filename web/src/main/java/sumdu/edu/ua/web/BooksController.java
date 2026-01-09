@@ -19,35 +19,30 @@ public class BooksController {
 
     @Autowired
     private CatalogRepositoryPort bookRepository;
+    @Autowired
+    private MailService mailService;
 
-    // 1. Відображення списку книг
     @GetMapping
     public String listBooks(Model model) {
         PageRequest pageRequest = new PageRequest(0, 100);
         List<Book> books = bookRepository.search(null, pageRequest).getItems();
 
-        // Передаємо список книг у шаблон
         model.addAttribute("books", books);
 
-        // Повертаємо назву шаблону (books.html)
         return "books";
     }
 
-    // 2. Форма додавання книги (GET)
     @GetMapping("/add")
     public String showAddForm(Model model) {
-        // Створюємо порожній об'єкт для прив'язки полів форми
         model.addAttribute("book", new Book(null, "", "", 0));
         return "book-form";
     }
 
-    // 3. Обробка форми (POST)
     @PostMapping("/add")
     public String saveBook(@ModelAttribute("book") Book book) {
-        // Зберігаємо книгу через репозиторій
-        bookRepository.add(book.getTitle(), book.getAuthor(), book.getPubYear());
+        Book savedBook = bookRepository.add(book.getTitle(), book.getAuthor(), book.getPubYear());
 
-        // Редірект на список після успішного збереження
+        mailService.sendNewBookEmail(savedBook);
         return "redirect:/books";
     }
 }

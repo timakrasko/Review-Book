@@ -25,11 +25,9 @@ public class BooksApiController {
 
     private static final Logger log = LoggerFactory.getLogger(BooksApiController.class);
 
-    // DI через поле
     @Autowired
     private CatalogRepositoryPort bookRepository;
 
-    // DI через конструктор (для ObjectMapper)
     private final ObjectMapper objectMapper;
 
     public BooksApiController(ObjectMapper objectMapper) {
